@@ -91,22 +91,23 @@ iNeuroniNeuroniNeuroniNeuron
 
 ans - 
     
-    ```
-    for i in range(0,4):
-        print("iNeuron",end='')
-    ```  
+```
+for i in range(0,4):
+    print("iNeuron",end='')
+```  
 Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
 
 ans- 
-    ```
-    num=int(input("Enter a number"))
-    if(num%2==0):
-        print("Even number")
-    else:
-        print("Odd number ")
-    ```
+```
+num=int(input("Enter a number"))
+if(num%2==0):
+    print("Even number")
+else:
+    print("Odd number ")
+```
+
 Q18. What are boolean operator?
-    ans - the operators used in boolean expressions that results into boolean values true or false are boolean operators . for e.g AND , OR and NOT .
+ans - the operators used in boolean expressions that results into boolean values true or false are boolean operators . for e.g AND , OR and NOT .
 
 Q19. What will the output of the following?
 ```
@@ -121,12 +122,12 @@ True and False and True
 
 ans - 
       
-      ```
-      true 
-      false
-      false
-      true
-      ```  
+ ```
+true 
+false     
+false
+true
+```  
 Q20. What are conditional statements in Python?
 
 
@@ -142,13 +143,13 @@ Q22. Write a code to take the age of person as an input and if age >= 18 display
 
 ans - 
     
-    ```
-    age=int(input(Enter the age of the person"))
-    if(age>=18):
-        print("I can vote")
-    elif(age<18):
-        print("I can't vote")  
-    ```
+```
+age=int(input(Enter the age of the person"))
+if(age>=18):
+    print("I can vote")
+elif(age<18):
+    print("I can't vote")  
+```
 Q23. Write a code that displays the sum of all the even numbers from the given list.
 ```
 numbers = [12, 75, 150, 180, 145, 525, 50]
@@ -156,13 +157,13 @@ numbers = [12, 75, 150, 180, 145, 525, 50]
 
 ans -   
     
-    ```
-    sum = 0
-    for i in numbers:
-        if(i%2==0):
-            sum+=i
-    print(sum)
-    ```
+```
+sum = 0
+for i in numbers:
+    if(i%2==0):
+        sum+=i
+print(sum)
+```
 
 Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
 
