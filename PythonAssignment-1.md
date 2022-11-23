@@ -1,5 +1,5 @@
 ## Assignment Part-1
-
+## Assignment Part-1
 Q1. Why do we call Python as a general purpose and high-level programming language?
 
 ans - Python is a general purpose programming language because it cane be used for multiple type of developments and differnt domains . Its called high level languange because the logic building in python does not requires one to know binary or assembly languages .
@@ -44,21 +44,21 @@ Q8. What is type casting?
 
 ans - Type casting is a method to change data type of a object or a variable . For e.g A integer to a string . In python it can   be done using functions like str(), int(),float(). 
 
-        ```
+```
         x=123   ## this is a integer
         s=str(x)  ## s is a string which stores the value as "123" 
-        ```
+```
  
 Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
 
 ans - yes , we can take multiple inputs using a single input function by using the split function with defining a separator . for e.g -
       
-      ```
+```
       s1,s2,s3 = input().split(" ")
 
       if we give input as --  ABC DEF GHI 
       it will get stored as s1= "ABC", s2="DEF" , s3="GHI"
-      ```  
+```  
 Q10. What are keywords?
 
 ans - keywords are reserved name in a programming languages . These keywords have a specific meaning and use . These cannot be used to be named as variables.
