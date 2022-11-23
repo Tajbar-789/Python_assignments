@@ -1,5 +1,5 @@
 ## Assignment Part-1
-## Assignment Part-1
+
 Q1. Why do we call Python as a general purpose and high-level programming language?
 
 ans - Python is a general purpose programming language because it cane be used for multiple type of developments and differnt domains . Its called high level languange because the logic building in python does not requires one to know binary or assembly languages .
@@ -230,10 +230,10 @@ desired_output = "iNeuron"
 ```
 
 ans - 
-        ``` 
+``` 
         str="Big Data iNeuron"
         print(str[9:])  // slicing the last portion of the string from index 9 
-        ```    
+```    
 
 Q29. Write a code to get the desired output of the following
 ```
@@ -273,11 +273,16 @@ ans-
     print(str1)
 ```
 Q34. What is a list in Python?
-ans - A list is a data structure that is mutable,ordered and can store different type of objects like integer,float,bool , string etc . A list is defined with square brackets . for e.g . l1=['A',12,1.23,false]  
+
+ans - A list is a data structure that is mutable,ordered and can store different type of objects like integer,float,bool , string 
+etc . A list is defined with square brackets . for e.g . l1=['A',12,1.23,false]  
+
 Q35. How can you create a list in Python?
+
 ans - A list is created with the help of square brackets and by adding element one after the other . for e.g . l1=['A',12,1.23,false] . we can use insert ,append or extend function to add elements in a list . 
 
 Q36. How can we access the elements in a list?
+
 ans- List is a ordered data structure which means that the index can be used to acccess elements in the order they were inserted . 
 To access the first element of a list we can use 0th index 
 ```
@@ -286,6 +291,7 @@ for e.g   l1=[1,2,3]
           print (l1[0:2]) # print the whole list
 
 ```
+
 Q37. Write a code to access the word "iNeuron" from the given list.
 ```
 lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
