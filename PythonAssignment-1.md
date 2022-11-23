@@ -1,5 +1,5 @@
 ## Assignment Part-1
-## Assignment Part-1
+
 Q1. Why do we call Python as a general purpose and high-level programming language?
 
 ans - Python is a general purpose programming language because it cane be used for multiple type of developments and differnt domains . Its called high level languange because the logic building in python does not requires one to know binary or assembly languages .
@@ -211,11 +211,13 @@ ans -
   ```   
 
 Q26. What is a string? How can we declare string in Python?
+
 ans - A string can be defined as a sequence of characters .for e.g. "Happy", "NEW",'year' etc. we can declare strings using the double quotes(" ") or single quotes(' ') .
 str1="HELLO"
 str2='world'
 
 Q27. How can we access the string using its index?
+
 ans - We can easily access the strings using its index as it maintains a order . The index of a string starts from 0 (first character ) to length of the string -1 (last character ).
 for e.g.  str1="Hello" 
         print(str1[0])   // prints first character 'H'
@@ -226,22 +228,26 @@ Q28. Write a code to get the desired output of the following
 string = "Big Data iNeuron"
 desired_output = "iNeuron"
 ```
+
 ans - 
         ``` 
         str="Big Data iNeuron"
         print(str[9:])  // slicing the last portion of the string from index 9 
         ```    
+
 Q29. Write a code to get the desired output of the following
 ```
 string = "Big Data iNeuron"
 desired_output = "norueNi"
 ```
+
 ans-
   ```
     str="Big Data iNeuron"
     print(str[-1:8:-1])
   ```
 Q30. Resverse the string given in the above question.
+
 ans-  
   ```
     str="Big Data iNeuron"
@@ -254,6 +260,7 @@ ans -
     del str1
     ```
 Q32. What is escape sequence?
+
 ans- escape sequences in programming languages are special characters or sequence that are used for different functionality . for e.g  "\n" is the newline character or "\t" is a tab character .
 
 Q33. How can you print the below string?
@@ -589,6 +596,7 @@ for i in d:
 
 ### Coding problems
 Q76. Write a Python program to find the factorial of a given number.
+
 ans - 
 ``` 
 n=int(input("Enter the number:"))
@@ -598,6 +606,7 @@ for i in range(n,1,-1):
 print(ans)
 ```
 Q77. Write a Python program to calculate the simple interest. Formula to calculate simple interest is SI = (P*R*T)/100
+
 ans- 
 ```
 [p,r,t]=[int(i) for i in input("Enter the values of p , r and t respectively").split()]
@@ -605,6 +614,7 @@ print("simple interest is ",(p*r*t)/100)
 
 ```
 Q78. Write a Python program to calculate the compound interest. Formula of compound interest is A = P(1+ R/100)^t.
+
 ans- 
 ```
 p,r,t=(int(i) for i in input("Enter the values of p , r and t respectively").split())
@@ -615,6 +625,7 @@ print(f"compound interest is {coumpund_int:.2f}")
 
 ```
 Q79. Write a Python program to check if a number is prime or not.
+
 ans- 
 ```
 num=int(input("Enter a number"))
@@ -632,6 +643,7 @@ else:
 
 ```
 Q80. Write a Python program to check Armstrong Number.
+
 ans-
 ```
 num=int(input("Enter the number to be checked as a armstrong number"))
@@ -656,6 +668,7 @@ else:
     print(num," is not a armstrong number")
 ```
 Q81. Write a Python program to find the n-th Fibonacci Number.
+
 ans-
 ```
 num=int(input("Enter the nth index of fibonnaci series"))   ## index starts from 0  . 
@@ -674,6 +687,7 @@ else:
     print(third,"is the",num,"th index of fibonnaci series")
 ```
 Q82. Write a Python program to interchange the first and last element in a list.
+
 ans-
 ```
 l=[int(num) for num in input("Enter the elements of the list").split(" ")]
@@ -682,6 +696,7 @@ l[0],l[len(l)-1]=l[len(l)-1],l[0]   ## swapping the two values
 print("first element and last element after the swap are ",l[0],l[len(l)-1])
 ```
 Q83. Write a Python program to swap two elements in a list.
+
 ans-
 ```
 l=[int(num) for num in input("Enter the elements of the list").split(" ")]  
@@ -692,9 +707,20 @@ l[pos1],l[pos2]=l[pos2],l[pos1]
 print("aftet the swap",l)
 
 ```
+
 Q84. Write a Python program to find N largest element from a list.
 
+ans-
+```
+l=[1,99,23,15,78,100,59,120]
+l.sort(reverse=True)
+n=int(input("Enter the value of n"))
+print(l[0:n])
+
+```
+
 Q85. Write a Python program to find cumulative sum of a list.
+
 ans-
 ```
 l=[int(ele) for ele in  input("Enter the list elements").split(" ")]
@@ -719,21 +745,72 @@ if(is_palindrome):
 else:
     print(str,"is not a palindrome")
 ```
+
 Q87. Write a Python program to remove i'th element from a string.
 
 Q88. Write a Python program to check if a substring is present in a given string.
 
+ans- the find() function of strings helps us to find the index of a substring that is present in the string. If the substring is present it gives the index of the starting point of substring and if its not present than it will give output as -1.
+```
+str1="My name is Tajbar"
+str2="Taj"
+str3="fads"
+print(str1.find(str2))      # prints 11
+print(str1.find(str3))      # prints -1
+```
+
 Q89. Write a Python program to find words which are greater than given length k.
 
+ans-
+```
+l=input("Enter the words").split(" ")
+k=int(input("Enter the value of k"))
+
+words_greater_than_len_k=[]
+for word in l:
+    if(len(word)>k):
+        words_greater_than_len_k.append(word)
+
+print(words_greater_than_len_k)
+```
 Q90. Write a Python program to extract unquire dictionary values.
 
+ans-
+```
+d={ 'A':1,
+    'B':2,
+    'C':3,
+    'D':2,
+    'E':1
+}
+ans=set(d.values())
+print(ans)
+
+```
 Q91. Write a Python program to merge two dictionary.
+
+ans-
+```
+d1={ 'A':1,
+    'B':2,
+    'C':3,
+    'D':2,
+    'E':1
+}
+d2={'F':12,
+    'G':23,
+    'A':12
+    }
+d1.update(d2)
+print(d1)
+```
 
 Q92. Write a Python program to convert a list of tuples into dictionary.
 ```
 Input : [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
 Output : {'Sachin': 10, 'MSD': 7, 'Kohli': 18, 'Rohit': 45}
 ```
+
 ans-
 ```
 l=[('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
