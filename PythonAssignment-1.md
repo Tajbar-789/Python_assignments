@@ -27,7 +27,8 @@ Q5. What are variable and how can we declare them?
 
 ans - variables are names given to memory locations that may store some value . Since the memory locations are represented as hexadecimal numbers so it becomes difficult to access the values stored there and that is why we use variables . 
 
-```x="123"   // string variable 
+```
+x="123"   // string variable 
 t=123     // integer variable 
 z=123.54  // double variable  
 ```
@@ -43,7 +44,8 @@ Q8. What is type casting?
 
 ans - Type casting is a method to change data type of a object or a variable . For e.g A integer to a string . In python it can   be done using functions like str(), int(),float(). 
 
-        ```x=123   ## this is a integer
+        ```
+        x=123   ## this is a integer
         s=str(x)  ## s is a string which stores the value as "123" 
         ```
  
@@ -51,7 +53,8 @@ Q9. Can we take more than one input from the user using single input() function?
 
 ans - yes , we can take multiple inputs using a single input function by using the split function with defining a separator . for e.g -
       
-      ```s1,s2,s3 = input().split(" ")
+      ```
+      s1,s2,s3 = input().split(" ")
 
       if we give input as --  ABC DEF GHI 
       it will get stored as s1= "ABC", s2="DEF" , s3="GHI"
@@ -88,16 +91,18 @@ iNeuroniNeuroniNeuroniNeuron
 
 ans - 
     
-    ```for i in range(0,4):
+    ```
+    for i in range(0,4):
         print("iNeuron",end='')
     ```  
 Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
 
 ans- 
-    ```num=int(input("Enter a number"))
-     if(num%2==0):
+    ```
+    num=int(input("Enter a number"))
+    if(num%2==0):
         print("Even number")
-     else:
+    else:
         print("Odd number ")
     ```
 Q18. What are boolean operator?
@@ -116,7 +121,8 @@ True and False and True
 
 ans - 
       
-      ```true 
+      ```
+      true 
       false
       false
       true
@@ -124,19 +130,20 @@ ans -
 Q20. What are conditional statements in Python?
 
 
-    ans - conditional statements are those statements that are used to build a logic based on some logic. This can be done using if ,else statements. 
+ans - conditional statements are those statements that are used to build a logic based on some logic. This can be done using if ,else statements. 
 
 Q21. What is use of 'if', 'elif' and 'else' keywords?
  
  
-    ans - if ,elif ,else keywords in python are used to check for conditons . if keywords is used for the first condition that is to be checked and elif is used for subsequent conditions that are to be checked and else is used for the case when all conditions are not met . 
+ans - if ,elif ,else keywords in python are used to check for conditons . if keywords is used for the first condition that is to be checked and elif is used for subsequent conditions that are to be checked and else is used for the case when all conditions are not met . 
      
 Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
 
 
 ans - 
     
-    ```age=int(input(Enter the age of the person"))
+    ```
+    age=int(input(Enter the age of the person"))
     if(age>=18):
         print("I can vote")
     elif(age<18):
@@ -149,11 +156,12 @@ numbers = [12, 75, 150, 180, 145, 525, 50]
 
 ans -   
     
-    ```sum = 0
-        for i in numbers:
-            if(i%2==0):
-                sum+=i
-        print(sum)
+    ```
+    sum = 0
+    for i in numbers:
+        if(i%2==0):
+            sum+=i
+    print(sum)
     ```
 
 Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
@@ -161,17 +169,18 @@ Q24. Write a code to take 3 numbers as an input from the user and display the gr
 
 ans - 
     
- ```   a,b,c=[int(i) for i in (input().split(" "))]
-      if(a>=b):
-        if(a>=c):
-            print(a)
-        else:
-            print(c)
-      else:
-        if(b>=c):
-            print(b)
-        else:
-            print(c)
+```   
+a,b,c=[int(i) for i in (input().split(" "))]
+if(a>=b):
+    if(a>=c):
+        print(a)
+    else:
+        print(c)
+else:
+    if(b>=c):
+        print(b)
+    else:
+        print(c)
   ```
 
 Q25. Write a program to display only those numbers from a list that satisfy the following conditions
@@ -188,9 +197,10 @@ numbers = [12, 75, 150, 180, 145, 525, 50]
 
 ans -
     
-  ```  numbers = [12, 75, 150, 180, 145, 525, 50]
-       for num in numbers :
-          if(num%5==0):
+  ```  
+    numbers = [12, 75, 150, 180, 145, 525, 50]
+    for num in numbers :
+        if(num%5==0):
             if(num>500):
                 break
             elif(num>150):
@@ -216,8 +226,9 @@ string = "Big Data iNeuron"
 desired_output = "iNeuron"
 ```
 ans - 
-        ``` str="Big Data iNeuron"
-            print(str[9:])  // slicing the last portion of the string from index 9 
+        ``` 
+        str="Big Data iNeuron"
+        print(str[9:])  // slicing the last portion of the string from index 9 
         ```    
 Q29. Write a code to get the desired output of the following
 ```
@@ -295,84 +306,285 @@ ans -
 ```
 Q40. What is a tuple? How is it different from list?
 
+ans- A tuple is a in built ordered immutable data structre in python . It is defined witin the round brackets . The difference between a list and a tuple is that a list is mutable in nature which means we can change the elements present in the list after the declartion whereas tuple does not allows the user to do so.
+
+
 Q41. How can you create a tuple in Python?
 
+ans- A tuple is created by using the tuple keyword or by using the round brackets in python. 
+    for e.g   ```  t1=tuple([1,2,3])
+                   t2=(1,2,3)  
+              ```
 Q42. Create a tuple and try to add your name in the tuple. Are you able to do it? Support your answer with reason.
+
+ans- The elements of a tuple needs to be provided while declaring it as it does not allows to add elements once it has been defined because of its immutability property .
 
 Q43. Can two tuple be appended. If yes, write a code for it. If not, why?
 
+ans- yes , two tuples can be appended by using the concatenation property of tuples but the result will be a new tuple . Tuples doesn't supports the append operation as it violates the immutability of the tuples.
+
+
 Q44. Take a tuple as an input and print the count of elements in it.
+
 ans-
 ```
 t=tuple(int(num) for num in input("Enter the elements in the tuple").split())
 print(len(t))
 ```
+
 Q45. What are sets in Python?
+
+ans- sets are mutable,unordered,unique collection of elements .sets can be defined with the help of curly brackets ({}) in python.
+```
+s={1,2,3}
+print(type(s))
+``` 
 
 Q46. How can you create a set?
 
+ans- sets are created with the help of curly brackets ({}) with elements in it or with the set constructor . 
+``` 
+s1=set()        ## first set
+s1.add(1)
+s1.add(2)
+print(s1)
+s2={1,2}         ## second set
+print(s2)
+```
 Q47. Create a set and add "iNeuron" in your set.
 
+ans-
+```
+s=set()      
+s.add('iNeuron')
+print(s)
+```
 Q48. Try to add multiple values using add() function.
 
+ans-
+```
+s=set()
+s.add('iNeuron')
+l=['Big','Data','Course']
+for i in l:
+    s.add(i)
+print(s)
+```
 Q49. How is update() different from add()?
+
+ans -  Add() function is used to add a single element to the set whereas a update() function can add an entire iterable like a list in just one function call. 
 
 Q50. What is clear() in sets?
 
+ans- Clear() function is used to clear all the elements from the set that are added . 
+
 Q51. What is frozen set?
+
+ans- A frozen set is a set that is immutable in nature . It has all the properties of a set with a additon that it cannot be changed once declared.
 
 Q52. How is frozen set different from set?
 
+ans- A frozen set is immutable in nature while a set in not immutable in nature . 
+
 Q53. What is union() in sets? Explain via code.
 
+ans - A union() between two sets is a unique collection of elements from both the sets . 
+```
+s1={1,2,3}
+s2={2,3,4}
+s1=s1.union(s2)
+print(s1)           # {1,2,3,4}
+``` 
 Q54. What is intersection() in sets? Explain via code.
 
-Q55. What is dictionary ibn Python?
+ans- A intersection() between two sets is a unique collection of elements that are common in both the sets .
+```
+s1={1,2,3}
+s2={2,3,4}
+s1=s1.intersection(s2)
+print(s1)           # {2,3,4}
+``` 
+Q55. What is dictionary in Python?
+
+ans - A dictionary is a data structure that stores data in form of key value pairs . Each value is linked to a key with the help of hash function.
 
 Q56. How is dictionary different from all other data structures.
 
+ans - A dictionay is different from other data structures as it contains data in form of key value pairs which are linked using a hash function. Other data structures only contain the the elements in it .
+
 Q57. How can we delare a dictionary in Python?
 
+ans - A dicitonay can be defined using dict() function or with curly brackets({ }).The data is added in dictionary in key value pairs .
 Q58. What will the output of the following?
 ```
 var = {}
 print(type(var))
 ```
+
 ans - <class 'dict'>
+
 Q59. How can we add an element in a dictionary?
+
+ans- we can add elements in array using update () function and also by giving the key value pair as a input.for e.g. 
+```
+d=dict()
+d.update({'Name':'Tajbar'})          # updating the dict with a new key value pair
+d.update({'Age':23})
+d['Gender']='Male'                  # setting the value of key in a dict by assignment operator
+print(d)
+```
 
 Q60. Create a dictionary and access all the values in that dictionary.
 
+ans-
+```
+d=dict()
+d.update({'Name':'Tajbar'})          # updating the dict with a new key value pair
+d.update({'Age':23})
+d['Gender']='Male'                  # setting the value of key in a dict by assignment operator
+print(d.values())
+```
 Q61. Create a nested dictionary and access all the element in the inner dictionary.
 
+ans-
+```
+d=dict()
+d.update({'Name':'Tajbar'})          # updating the dict with a new key value pair
+d.update({'Age':23})
+d['Gender']='Male'                  # setting the value of key in a dict by assignment operator
+d['Marks']={'English':83,'Physics':85,'Chemistry':89,'Mathematics':92,'Computer Science':94}
+for key,value in d['Marks'].items():
+    print(value,"Marks in",key)
+```
 Q62. What is the use of get() function?
+
+ans- The get() function is used to get the value associated with the key that is passed as a argument in the function . for e.g.
+```
+d={'A':1,
+    'B':2}
+print(d.get('A'))       # prints 1 which is the value associated with 'A'
+```
 
 Q63. What is the use of items() function?
 
+ans- The items() function is used to get a list of the key value pairs in the dictionary . for e.g.
+```
+d={'A':1,
+    'B':2}
+print(d.items())       # prints  dict_items([('A', 1), ('B', 2)])
+```
+
 Q64. What is the use of pop() function?
 
-Q65. What is the use of popitems() function?
+ans-The pop() function is used to delete the key value pair for which the key is passed as a argument . for e.g. 
+```
+d={'A':1,
+    'B':2}
+print(d.pop('A'))       # prints 1 indicating that pop operation was successful  makind dictionary d={'B':2}
+```
+
+Q65. What is the use of popitem() function?
+
+ans-The popitem() function for dictionary is used to delete last added key value pair that is stored in the dictionary.for e.g. 
+```
+d={'A':1,
+    'B':2}
+print(d.popitem())        ## prints the last key value pair and deletes it 
+``` 
 
 Q66. What is the use of keys() function?
 
+ans-The keys() function for dictionary is used to get all keys that are stored in the dictionary in form of list . for e.g .
+```
+d={'A':1,
+    'B':2}
+print(d.keys())  ## prints dict_keys['A','B']
+```
 Q67. What is the use of values() function?
+
+ans- The values() function for dictionary is used to get all values that are stored in the dictionary in form of list .
+```
+d={'A':1,
+    'B':2}
+print(d.values())  ## prints dict_values [1,2]
+```
 
 Q68. What are loops in Python?
 
+ans- loops are statements that helps to run a certain block of code any number of times without rewriting the code . 
+
 Q69. How many type of loop are there in Python?
+
+ans - There are two type of loops in python i.e for loop and while loop .
 
 Q70. What is the difference between for and while loops?
 
+ans- The for loop in python is used to iterate over a range or a iterable object whereas in case of while loop the loop runs till a condition is satisfied . A while loop is usually used when the number of iterations  is not known and for loop is used when number of iterations is known . for e.g .
+
+```
+for i in range (0,5):  # for loop uses a iterable or a range function
+    print(i)
+
+x=0
+while(x<5):         # while loop uses a conditon 
+    print(i)
+
+```
+
 Q71. What is the use of continue statement?
+
+ans- A continue statement is used to jump over to the next iteration in the loop .for e.g.
+```
+for i in range (0,5):  
+    if(i==2):               # when i==2 the continue statement will skip the rest of the statements in the loop and jump to i=3
+        continue
+    else:
+        print(i)
+```
+
 
 Q72. What is the use of break statement?
 
+ans- A continue statement is used to jump over to the next iteration in the loop .for e.g.
+```
+for i in range (0,5):  
+    if(i==2):          # when i==2 the break statement will skip the rest of the iterations in the loop and come out of the loop
+        break
+    else:
+        print(i)
+```
+
 Q73. What is the use of pass statement?
 
+ans- The pass statement is used to when the programmer doesnot want to execute any code and keep the code syntatically correct as well .
+```
+a = 10
+b = 20
+
+if(a<b):
+pass
+else:
+print("b<a")
+
+``` 
 Q74. What is the use of range() function?
 
+ans- The range function gives the output in form of a sequence starting from the start (first parameter ) to end-1(second parameter) by taking a increment (third parameter) at every step.
+```
+for c in range(1,10,2):
+    print(c,end=" ")            ## prints 1 3 5 7 9 
+
+```
 Q75. How can you loop over a dictionary?
 
+ans -
+```
+d={'A':1,
+    'B':2}
+
+for i in d:
+    print("key:",i,"value:",d[i])
+```
 
 ### Coding problems
 Q76. Write a Python program to find the factorial of a given number.
@@ -492,6 +704,7 @@ print(sum)
 ```
 
 Q86. Write a Python program to check if a string is palindrome or not.
+
 ans-
 ``` 
 str=input("Enter the string" )
